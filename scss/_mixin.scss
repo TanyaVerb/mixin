@@ -1,0 +1,21 @@
+$maxPcWidth: 1280;
+
+@mixin adaptive-font($pcWidth, $mobWidth) {
+  $addWidth: $pcWidth - $mobWidth;
+  $maxWidth: $maxPcWidth - 420;
+  font-size: calc(
+    #{$mobWidth + px} + #{$addWidth} * ((100vw - 420px) / #{$maxWidth})
+  );
+  color: rgb(12, 17, 108);
+}
+
+@mixin adaptive-square($pcWidth, $mobWidth) {
+  $addWidth: $pcWidth - $mobWidth;
+  $maxWidth: $maxPcWidth - 420;
+  width: calc(
+    #{$mobWidth + px} + #{$addWidth} * ((100vw - 420px) / #{$maxWidth})
+  );
+  height: calc(
+    #{$mobWidth + px} + #{$addWidth} * ((100vw - 420px) / #{$maxWidth})
+  );
+}

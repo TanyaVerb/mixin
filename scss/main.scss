@@ -1,0 +1,55 @@
+@import "./reset";
+@import "./mixin";
+
+p {
+  font-size: 20px;
+  color: #000;
+}
+
+div {
+  max-width: 420px;
+  max-height: 420px;
+  background-color: red;
+  @include adaptive-square(500, 50);
+  min-width: 30px;
+  min-height: 30px;
+}
+p {
+  @include adaptive-font(40, 10);
+}
+
+h1 {
+  @include adaptive-font(60, 20);
+}
+
+span {
+  font-size: 20px;
+  color: #000;
+  @include adaptive-font(50, 10);
+}
+
+// div {
+//   @include adaptive-square(500, 50);
+// }
+
+// > 1280px - 40px
+// 1280 > x >=720px - 30px
+// 720 > x - 20px
+// 420px = 10px
+
+// @media (max-width: 1279px) and (min-width: 720px) {
+//   p {
+//     font-size: 30px;
+//   }
+// }
+// @media (max-width: 719px) and (min-width: 420px) {
+//   p {
+//     font-size: 20px;
+//   }
+// }
+
+// @media (max-width: 419px) {
+//   p {
+//     font-size: 10px;
+//   }
+// }
