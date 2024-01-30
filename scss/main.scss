@@ -7,6 +7,9 @@ p {
 }
 
 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 420px;
   max-height: 420px;
   background-color: red;
@@ -26,6 +29,7 @@ span {
   font-size: 20px;
   color: #000;
   @include adaptive-font(50, 10);
+  text-align: center;
 }
 
 // div {

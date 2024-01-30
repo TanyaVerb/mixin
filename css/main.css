@@ -11,6 +11,15 @@ p {
 }
 
 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 420px;
   max-height: 420px;
   background-color: red;
@@ -35,4 +44,5 @@ span {
   color: #000;
   font-size: calc(10px + 40 * (100vw - 420px) / 860);
   color: rgb(12, 17, 108);
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
